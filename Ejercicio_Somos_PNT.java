@@ -5,13 +5,12 @@
  */
 package ejercicio_somos_pnt;
 import java.util.*;
-import ejercicio_somos_pnt.Producto;
 
 public class Ejercicio_Somos_PNT {
 
     
     public static void main(String[] args) {
-        List<Producto> Lista = new ArrayList<Producto>();
+        List<Producto> Lista = new ArrayList<>();
         
         Producto P1 = new Producto(1, "Coca-Cola Zero","1.5",20);
         Producto P2 = new Producto(1, "Coca-Cola","1.5",18);
