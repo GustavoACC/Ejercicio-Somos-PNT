@@ -27,6 +27,7 @@ public class Ejercicio_Somos_PNT {
         {
                 System.out.println (Lista.get(i).toString());
         }
+        
         System.out.println("=============================");
         Collections.sort(Lista);
         System.out.println ("Producto más caro: " + Lista.get(0).getNombre());

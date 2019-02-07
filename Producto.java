@@ -25,13 +25,17 @@ public class Producto implements Comparable<Producto> {
     private void SeleccionarMensaje(){
          switch(this.Tipo)
         {
+            
             case 1: Mensaje = "Nombre: " + this.Nombre + " /// Litros: " + this.Contenido + " /// Precio: $" + this.Precio;
                     break;
             case 2: Mensaje = "Nombre: " + this.Nombre + " /// Contenido: " + this.Contenido + " /// Precio: $" + this.Precio;
                     break;
             case 3: Mensaje = "Nombre: " + this.Nombre + " /// Precio: $" + this.Precio + " /// Inidad de venta: " + this.Contenido;
                     break;
+            default: Mensaje = "Nombre: " + this.Nombre + " /// Litros: " + this.Contenido + " /// Precio: $" + this.Precio;
+             break;
         }
+        
     }
     
     @Override
