@@ -4,11 +4,8 @@ package ejercicio_somos_pnt;
 
 public class Producto implements Comparable<Producto> {
 
-    private int Tipo;
-    private String Nombre;
-    private String Contenido;
-    private int Precio;
-    private String Mensaje;
+    private int Tipo,Precio;
+    private String Nombre,Contenido,Mensaje;
     
     public Producto(int tipo,String nombre, String contenido, int precio){
         this.Tipo = tipo;

@@ -12,8 +12,6 @@ public class Ejercicio_Somos_PNT {
     
     public static void main(String[] args) {
         List<Producto> Lista = new ArrayList<Producto>();
-        int maximo = 0;
-        int minimo = 0;
         
         Producto P1 = new Producto(1, "Coca-Cola Zero","1.5",20);
         Producto P2 = new Producto(1, "Coca-Cola","1.5",18);
@@ -27,22 +25,12 @@ public class Ejercicio_Somos_PNT {
         
         for(int i = 0; i < Lista.size();i++)
         {
-            
-            if (i == Lista.size()-1){
                 System.out.println (Lista.get(i).toString());
-                System.out.println ("=============================");
-            }else{
-                System.out.println (Lista.get(i).toString());
-            }
-            
-            if(Lista.get(maximo).compareTo(Lista.get(i)) == 1){
-                maximo = i;
-            }else if(Lista.get(minimo).compareTo(Lista.get(i)) == -1){
-                minimo = i;
-            }
         }
-        System.out.println ("Producto más caro: " + Lista.get(maximo).getNombre());
-        System.out.println ("Producto más barato: " + Lista.get(minimo).getNombre());
+        System.out.println("=============================");
+        Collections.sort(Lista);
+        System.out.println ("Producto más caro: " + Lista.get(0).getNombre());
+        System.out.println ("Producto más barato: " + Lista.get(Lista.size()-1).getNombre());
     }
     
 }
